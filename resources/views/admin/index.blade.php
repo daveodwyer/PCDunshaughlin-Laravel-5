@@ -30,6 +30,7 @@
 									<th>Title</th>
 									<th>Slug</th>
 									<th>Edit</th>
+									<th>View</th>
 									<th>Delete</th>
 								</tr>
 
@@ -39,6 +40,7 @@
 										<td width="20">{!! link_to_route('admin.page.edit', $page->title, [$page->id]) !!} </td>
 										<td width="20">{!! $page->slug !!}</td>
 										<td width="20">{!! link_to_route('admin.page.edit', '', [$page->id], ['class' => 'fi-page-edit' ]) !!} </td>
+										<td width="20">{!! link_to_route('page.show', '', [$page->slug], ['class' => 'fi-page-edit' ]) !!} </td>
 										{!! Form::model($page, ['route' => ['admin.page.destroy', $page->id], 'method' => 'delete']) !!}
 											<td style="color: red;" width="20">{!! Form::button('', ['type' => 'submit', 'class' => 'fi-page-delete delete-button' ]) !!} </td>
 										{!! Form::close() !!}

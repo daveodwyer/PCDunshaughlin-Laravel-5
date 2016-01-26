@@ -3,7 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller,
+	Input,
+	Validator,
+	Mail,
+	Redirect,
 	App\ContactForm as ContactForm,
+	Illuminate\Database\Eloquent\Model,
 	App\Models\Page,
 	Illuminate\Support\Facades\View;
 
@@ -44,8 +49,11 @@ class ContactFormController extends Controller {
 		$contact_form->query = $input['query'];
 		$contact_form->year = date('Y');
 
-		$mailer = new Mailer();
-		$mailer->sendTo('email-dave@hotmail.com', 'PCDunshaughlin Query', 'emails.enquiry', $input);
+		Mail::send('emails.enquiry', ['user' => $contact_form], function ($m) use ($contact_form) {
+			$m->from('dave@pcdunshaughlin.com', 'Your Application');
+
+			$m->to('dodwyer91@gmail.com', $contact_form->name)->subject('Your Reminder!');
+		});
 
 		// save the contact_form to the db
 		if($contact_form->save()) {

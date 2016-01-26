@@ -2,4 +2,6 @@
 
 namespace App;
 
-class ContactForm extends Eloquent {}
+use Illuminate\Database\Eloquent\Model;
+
+class ContactForm extends Model {}

@@ -37,7 +37,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 	<header class="main-header">
 
 		<!-- Logo -->
-		<a href="index2.html" class="logo"><b>Admin</b>LTE</a>
+		<a href="index2.html" class="logo"><b>WebDash</b> Admin</a>
 
 		<!-- Header Navbar -->
 		<nav class="navbar navbar-static-top" role="navigation">
