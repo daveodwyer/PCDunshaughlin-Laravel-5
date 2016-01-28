@@ -52,7 +52,7 @@
 				<li class="active"><a href="{{ URL::route('admin.page.index') }}"><span>View Pages</span></a></li>
 				<li class="active"><a href="{{ URL::route('admin.page.create') }}"><span>Create a Page</span></a></li>
 				<li class="active"><a href="#"><span>Settings</span></a></li>
-				<li>{!! HTML::linkAction('SessionsController@destroy', 'Log Out') !!}</li>
+				<li><a href="logout"><span>Log Out</span></a></li>
 				<li class="treeview">
 					<a href="#"><span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
 					<ul class="treeview-menu">
