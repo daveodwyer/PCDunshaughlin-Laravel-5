@@ -3,3 +3,6 @@
 Homestead.yaml
 Homestead.json
 .env
+.htaccess
+public/css/builds/
+public/js/builds/
