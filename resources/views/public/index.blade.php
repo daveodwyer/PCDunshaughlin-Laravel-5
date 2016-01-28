@@ -8,7 +8,7 @@
 						<h1>In Safe Hands</h1>
 						{!! $page['content'] !!}
 
-						<a class="btn btn-primary" id="services-btn">View our Services</a>
+						<a class="btn btn-primary" href="/services-and-prices" id="services-btn">View our Services</a>
 					</div>
 
 					<div class="col-xs-12 col-md-6 col-lg-6">
