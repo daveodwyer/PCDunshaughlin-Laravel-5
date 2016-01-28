@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,13 +13,9 @@
 	<link rel="stylesheet" href="{{ asset('admin-assets/css/foundation-icons/foundation-icons.css') }}" />
 	<!-- Theme style -->
 	<link href="{{ asset("admin-assets/bower_components/AdminLTE/dist/css/AdminLTE.min.css")}}" rel="stylesheet" type="text/css" />
-	<!-- AdminLTE Skins. We have chosen the skin-blue for this starter
-          page. However, you can choose any other skin. Make sure you
-          apply the skin class to the body tag so the changes take effect.
-    -->
 	<link href="{{ asset("admin-assets/bower_components/AdminLTE/dist/css/skins/skin-blue.min.css")}}" rel="stylesheet" type="text/css" />
 	<!-- iCheck -->
-	<link rel="stylesheet" href="../../plugins/iCheck/square/blue.css">
+	<link rel="stylesheet" href="{{ asset ("/admin-assets/bower_components/AdminLTE/plugins/iCheck/square/blue.css") }}" />
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,19 +52,18 @@
 
 		{!! Form::close() !!}
 
-		<a href="#">I forgot my password</a><br>
-
 	</div>
 	<!-- /.login-box-body -->
 </div>
 <!-- /.login-box -->
 
 <!-- jQuery 2.1.4 -->
-<script src="../../plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<script src="{{ asset ("/admin-assets/bower_components/AdminLTE/plugins/jQuery/jQuery-2.1.4.min.js") }}"></script>
 <!-- Bootstrap 3.3.5 -->
-<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="{{ asset ("/admin-assets/bower_components/AdminLTE/bootstrap/js/bootstrap.min.js") }}" type="text/javascript"></script>
 <!-- iCheck -->
-<script src="../../plugins/iCheck/icheck.min.js"></script>
+<script src="{{ asset ("/admin-assets/bower_components/AdminLTE/plugins/iCheck/icheck.min.js") }}" type="text/javascript"></script>
+
 <script>
 	$(function () {
 		$('input').iCheck({
