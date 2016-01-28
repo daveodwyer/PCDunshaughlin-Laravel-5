@@ -31,10 +31,13 @@
 	</div>
 	<!-- /.login-logo -->
 	<div class="login-box-body">
-		<p class="login-box-msg">Sign in to start your session</p>
-
-
-		<span id="login-error">{{{ Session::get('error') }}}</span>
+		<p class="login-box-msg">
+			@if(Session::get('error'))
+				<b>{{ Session::get('error') }}</b>
+			@else
+				Sign in to start your session
+			@endif
+		</p>
 
 		{!! Form::open(['route' => 'sessions.store', 'id' => 'login']) !!}
 
