@@ -38,7 +38,7 @@
 		            <span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
 		          </button>
-		          <a class="navbar-brand" href="/"><img class="img-responsive" src="{{ asset('imgs/pc-logo.png') }}" /></a> 
+		          <a class="navbar-brand" href="/"><img class="img-responsive" src="{{ asset('imgs/pc-logo.png') }}" /></a>
 
 	        </div>
 
@@ -64,12 +64,12 @@
 				<div id="footer-icons">
 
 					<div id="built-with" class="col-lg-6 col-md-1 col-sm-6 ">
-						<a href="http://www.laravel.com" target="_BLANK" alt="Laravel Link"><img alt="Built with love using Laravel" src=" {{ asset('/imgs/laravel-logo.png') }}"/></a>
+						<a href="http://www.laravel.com" target="_BLANK"><img alt="Built with love using Laravel" src=" {{ asset('/imgs/laravel-logo.png') }}"/></a>
 						<!-- Hi there! This site was built and designed with Bootstrap and Laravel by Dave O'Dwyer :: http://daveodwyer.ie -->
 					</div>
 
 					<div id="social-icons" class="col-lg-1 col-md-1 col-sm-6 col-lg-offset-5">
-						<a href="#facebook"><img src="{{ asset('imgs/facebook_footer.png')}}" alt="PCDunshaughlin Facebook Page" /></a>
+						<a href="https://www.facebook.com/pcdunshaughlin" target="_BLANK"><img src="{{ asset('imgs/facebook_footer.png')}}" alt="PCDunshaughlin Facebook Page" /></a>
 					</div>
 
 				</div>
